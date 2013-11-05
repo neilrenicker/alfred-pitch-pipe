@@ -116,6 +116,6 @@ Let [Alfred][1] help you sing on key! This workflow gives you quick access to th
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>http://neilrenicker.com</string>
+	<string>https://github.com/neilrenicker/alfred-pitch-pipe</string>
 </dict>
 </plist>
