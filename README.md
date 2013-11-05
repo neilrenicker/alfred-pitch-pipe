@@ -6,7 +6,7 @@ Let [Alfred][1] help you sing on key! This workflow gives you quick access to th
 * tune your guitar (or other instrument)
 * start a [barbershop quartet!][3]
 
-### [View releases and download](https://github.com/neilrenicker/alfred-pitch-pipe/releases)
+### [Download alfred-pitch-pipe.alfredworkflow](http://via.neil.re/SJD8)
 
 ## How to use:
 
