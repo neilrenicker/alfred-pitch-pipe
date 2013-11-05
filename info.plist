@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.neilrenicker.pitch-pipe</string>
+	<key>connections</key>
+	<dict>
+		<key>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0567E72F-6335-437D-AA73-8589B196EE59</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>819B96A7-7A0D-406D-B93E-802C2E411824</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Neil Renicker</string>
+	<key>description</key>
+	<string>Play pitch pipe tones</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Pitch Pipe</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>pitch</string>
+				<key>subtext</key>
+				<string>Type a pitch to play. Ex "c", "ab", "f#"</string>
+				<key>text</key>
+				<string>Pitch Pipe</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>819B96A7-7A0D-406D-B93E-802C2E411824</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>$query = trim( "{query}" );
+
+</string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>set temp to "{query}"
+
+do shell script "afplay " &amp; temp &amp; ".mp3"</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>0567E72F-6335-437D-AA73-8589B196EE59</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0567E72F-6335-437D-AA73-8589B196EE59</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>819B96A7-7A0D-406D-B93E-802C2E411824</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://neilrenicker.com</string>
+</dict>
+</plist>
