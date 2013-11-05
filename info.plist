@@ -6,22 +6,11 @@
 	<string>com.neilrenicker.pitch-pipe</string>
 	<key>connections</key>
 	<dict>
-		<key>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</key>
+		<key>9BBE7DAF-9B24-4ED7-BC54-5672AF626EBC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>0567E72F-6335-437D-AA73-8589B196EE59</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>819B96A7-7A0D-406D-B93E-802C2E411824</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -42,52 +31,12 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>pitch</string>
-				<key>subtext</key>
-				<string>Type a pitch to play. Ex "c", "ab", "f#"</string>
-				<key>text</key>
-				<string>Pitch Pipe</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>819B96A7-7A0D-406D-B93E-802C2E411824</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>$query = trim( "{query}" );
-
-</string>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
 				<string>set temp to "{query}"
 
-do shell script "afplay " &amp; temp &amp; ".mp3"</string>
+do shell script "afplay tones/" &amp; temp &amp; ".mp3"</string>
 				<key>type</key>
 				<integer>6</integer>
 			</dict>
@@ -95,6 +44,33 @@ do shell script "afplay " &amp; temp &amp; ".mp3"</string>
 			<string>alfred.workflow.output.script</string>
 			<key>uid</key>
 			<string>0567E72F-6335-437D-AA73-8589B196EE59</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pitch</string>
+				<key>script</key>
+				<string>php -f pitch_pipe.php "{query}"</string>
+				<key>subtext</key>
+				<string>Type a pitch to play. Ex "c", "ab", "f#"</string>
+				<key>title</key>
+				<string>Pitch Pipe</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9BBE7DAF-9B24-4ED7-BC54-5672AF626EBC</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -108,12 +84,7 @@ do shell script "afplay " &amp; temp &amp; ".mp3"</string>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>26A2E5AC-4058-4610-8CB2-DE2CE2009E95</key>
-		<dict>
-			<key>ypos</key>
-			<real>10</real>
-		</dict>
-		<key>819B96A7-7A0D-406D-B93E-802C2E411824</key>
+		<key>9BBE7DAF-9B24-4ED7-BC54-5672AF626EBC</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>

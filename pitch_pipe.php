@@ -1,6 +1,6 @@
 <?php
 
-$xml = "<?xml version=\"1.0\"?>\n<items>\n";
+$query = trim($argv[1]);
 $items = array(
   "ab" => "A♭",
   "a" => "A",
@@ -17,18 +17,20 @@ $items = array(
   "g" => "G"
 );
 
+$xml = "<?xml version=\"1.0\"?>\n<items>\n";
+
 foreach ($items as $key => $value) {
   if ( !$query ) {
-    $xml .= "<item>\n";
-    $xml .= "<title>$item</title>\n";
-    $xml .= "<subtitle>Play this key</subtitle>\n";
-    $xml .= "<icon>icons/add.png</icon>\n";
+    $xml .= "<item arg=\"$key\">\n";
+    $xml .= "<title>$value</title>\n";
+    $xml .= "<subtitle>Shortcut: type \"$key\"</subtitle>\n";
+    $xml .= "<icon>icon.png</icon>\n";
     $xml .= "</item>\n";
-  } elseif ( stripos($name . $client, $query) !== false ) {
-    $xml .= "<item uid=\"harvestnew-$id\" autocomplete=\"$name → \">\n";
-    $xml .= "<title>$name, $client</title>\n";
-    $xml .= "<subtitle>View available tasks...</subtitle>\n";
-    $xml .= "<icon>icons/add.png</icon>\n";
+  } elseif ( stripos($key, $query) !== false ) {
+    $xml .= "<item arg=\"$key\">\n";
+    $xml .= "<title>$value</title>\n";
+    $xml .= "<subtitle>Shortcut: type \"$key\"</subtitle>\n";
+    $xml .= "<icon>icon.png</icon>\n";
     $xml .= "</item>\n";
   }
 }
