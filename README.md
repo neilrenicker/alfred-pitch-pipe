@@ -10,6 +10,8 @@ Let [Alfred][1] help you sing on key! This workflow gives you quick access to th
 
 ## How to use:
 
+![How to use alfred-pitch-pipe](http://f.cl.ly/items/2X2h1o2t0t2r3d1V0f1Y/alfred-pitch-pipe.gif)
+
 * [download](https://github.com/neilrenicker/alfred-pitch-pipe/releases) alfred-pitch-pipe and double click the file to install
 * type `pitch` into Alfred
 * select a pitch (or type the shortcut keys shown within the workflow), and press enter to play the tone
