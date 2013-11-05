@@ -6,13 +6,13 @@ Let [Alfred][1] help you sing on key! This workflow gives you quick access to th
 * tune your guitar (or other instrument)
 * start a [barbershop quartet!][3]
 
-### [Download alfred-pitch-pipe.alfredworkflow](http://via.neil.re/SJD8)
+### [Download alfred-pitch-pipe.alfredworkflow](http://via.neil.re/SJna)
 
 ## How to use:
 
 ![How to use alfred-pitch-pipe](http://f.cl.ly/items/2X2h1o2t0t2r3d1V0f1Y/alfred-pitch-pipe.gif)
 
-* [download](https://github.com/neilrenicker/alfred-pitch-pipe/releases) alfred-pitch-pipe and double click the file to install
+* [download](http://via.neil.re/SJna) alfred-pitch-pipe and double click the file to install
 * type `pitch` into Alfred
 * select a pitch (or type the shortcut keys shown within the workflow), and press enter to play the tone
 
